@@ -1,11 +1,11 @@
 package paque1;
 
-public class ciudadano extends persona {
+public class Ciudadano extends Persona {
 		
 	private String Provi; 
 	private long DNI;
 	
-	public ciudadano(String Provi, long DNI, String nombre, String apellido) {
+	public Ciudadano(String nombre, String apellido,String Provi, long DNI) {
 		super( nombre, apellido);
 		this.Provi = Provi;
 		this.DNI = DNI;

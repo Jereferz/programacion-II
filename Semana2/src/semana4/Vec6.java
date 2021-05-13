@@ -10,11 +10,38 @@ public class Vec6 {
 		
 		int A [] = new int [5];
 		int i;
-		for (i=0;i<=4;i++) {
+		boolean repeat = true;
+		for (int n=0;n<=4;n++) {
 			System.out.print("Ingrese valor a guardar: ");
-			A[i]=read.nextInt();
+			A[n]=read.nextInt();
+			for (i=0;i<=3;i++) {
+				if (n!=i) {
+					if (A[n]==A[i]) {
+					repeat = false;
+					}
+				}
+			}
+			if (repeat) {
+				A[i] = n;
+				i = i+1;
+			} else {
+				System.out.println("Elemento repetido, vuelva a ingresar un numero no repetido");
+			}
+			repeat= true;
 		}
-		int guardar=0;
+		/*for (int n=0;n<=4;n++) {
+			System.out.print("Ingrese valor a guardar: ");
+			A[n]=read.nextInt();
+			for (i=0;i<=3;i++) {
+				if (n!=i) {
+				if (A[n]==A[i]) {
+					A[i]=0;
+				}
+			}
+			}
+			
+		}*/
+		/*int guardar=0;
 		for (int n=0;n<=4;n++) {
 			for (i=0;i<=3;i++) {
 				
@@ -24,12 +51,13 @@ public class Vec6 {
 						}
 					}
 			}
-		}
-		int f =0;
+		}*/
+		
 		System.out.println("Numeros del array sin repetidos: ");
-		while(f<=4) {
-			System.out.println(A[f]);
-			f++;
+		int n=0;
+		while(n<=4) {
+			System.out.println(A[n]);
+			n++;
 		}
 	}
 
