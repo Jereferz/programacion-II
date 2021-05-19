@@ -10,52 +10,26 @@ public class Vec6 {
 		
 		int A [] = new int [5];
 		int i;
-		boolean repeat = true;
-		for (int n=0;n<=4;n++) {
+	
+		int valorU; //lo que ingresa el usuario
+		for (int n=0;n<A.length;n++) {
 			System.out.print("Ingrese valor a guardar: ");
-			A[n]=read.nextInt();
-			for (i=0;i<=3;i++) {
-				if (n!=i) {
-					if (A[n]==A[i]) {
-					repeat = false;
-					}
+			boolean repeat=true;
+			valorU=read.nextInt();
+			for (i=0;i<A.length;i++) {
+				if (valorU==A[i]) {
+					repeat=false;
 				}
 			}
-			if (repeat) {
-				A[i] = n;
-				i = i+1;
-			} else {
-				System.out.println("Elemento repetido, vuelva a ingresar un numero no repetido");
+			if (repeat==false) {
+				System.out.println("Numero ya ingresado. Ingrese otro");
+				n=n-1;
 			}
-			repeat= true;
+			A[n]=valorU;		
 		}
-		/*for (int n=0;n<=4;n++) {
-			System.out.print("Ingrese valor a guardar: ");
-			A[n]=read.nextInt();
-			for (i=0;i<=3;i++) {
-				if (n!=i) {
-				if (A[n]==A[i]) {
-					A[i]=0;
-				}
-			}
-			}
-			
-		}*/
-		/*int guardar=0;
-		for (int n=0;n<=4;n++) {
-			for (i=0;i<=3;i++) {
-				
-					if (n!=i) {
-						if (A[n]==A[i]) {
-							A[i]=0;
-						}
-					}
-			}
-		}*/
-		
 		System.out.println("Numeros del array sin repetidos: ");
 		int n=0;
-		while(n<=4) {
+		while(n<A.length) {
 			System.out.println(A[n]);
 			n++;
 		}

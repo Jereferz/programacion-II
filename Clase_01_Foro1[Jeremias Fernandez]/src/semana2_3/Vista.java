@@ -4,25 +4,15 @@ import java.util.Scanner;
 
 public class Vista {
 
-	public static void mostrarPersona(Persona p) {
+	/*public static void mostrarPersona(Persona p) {
 		System.out.println(p.getNombre());
 		System.out.println(p.getApellido());
-	}
-	/*public static Persona entregarPersona() {
-		
-		Scanner scanner = new Scanner(System.in);
-		
-		
-		
-		Persona personita = new Persona(nom,ape);
-		
-		return personita;
 	}*/
 	public static void mostrarCiudadano(Ciudadano c) {
-		System.out.println(c.getNombre());
-		System.out.println(c.getApellido());
-		System.out.println(c.getDni());
-		System.out.println(c.getProvincia());
+		System.out.println("Nombre:    "+c.getNombre());
+		System.out.println("Apellido:  "+c.getApellido());
+		System.out.println("Provincia: "+c.getProvincia());
+		System.out.println("Documento: "+c.getDni());
 	};
 	public static Ciudadano entregarCiudadano() {
 		Scanner scanner = new Scanner(System.in);

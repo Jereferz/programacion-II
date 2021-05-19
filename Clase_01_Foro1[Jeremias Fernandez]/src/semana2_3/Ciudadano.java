@@ -5,12 +5,11 @@ public class Ciudadano extends Persona {
 	private String Provi; 
 	private long DNI;
 	
-	public Ciudadano(String nombre, String apellido,String Provi, long DNI) {
+	public Ciudadano(String nombre, String apellido,String Provin, long dnii) {
 		super( nombre, apellido);
-		this.Provi = Provi;
-		this.DNI = DNI;
+		this.Provi = Provin;
+		this.DNI = dnii;
 	}
-
 	public String getProvincia() {
 		return Provi;
 	}
@@ -26,4 +25,9 @@ public class Ciudadano extends Persona {
 	public void setDni(long DNI) {
 		this.DNI = DNI;	
 	}
+		public String toString() {
+		String mensaje ="Provincia: "+ Provi+" DNI: "+DNI;
+		return mensaje;
+	}
+
 }
