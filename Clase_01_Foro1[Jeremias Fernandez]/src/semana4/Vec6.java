@@ -9,14 +9,18 @@ public class Vec6 {
 		Scanner read = new Scanner(System.in);
 		
 		int A [] = new int [5];
-		int i;
-	
+		
+		//Programa para que almacene 5 valores en un vector y
+		//que no puedan ingresar repetidos.
 		int valorU; //lo que ingresa el usuario
 		for (int n=0;n<A.length;n++) {
-			System.out.print("Ingrese valor a guardar: ");
+			System.out.print("["+n+"] = ");
 			boolean repeat=true;
 			valorU=read.nextInt();
-			for (i=0;i<A.length;i++) {
+			if (valorU!=0) {
+				
+			}
+			for (int i=0;i<A.length;i++) {
 				if (valorU==A[i]) {
 					repeat=false;
 				}
@@ -24,14 +28,15 @@ public class Vec6 {
 			if (repeat==false) {
 				System.out.println("Numero ya ingresado. Ingrese otro");
 				n=n-1;
+				
+			}else {
+				A[n]=valorU;
 			}
-			A[n]=valorU;		
+			
 		}
 		System.out.println("Numeros del array sin repetidos: ");
-		int n=0;
-		while(n<A.length) {
-			System.out.println(A[n]);
-			n++;
+		for (int c=0;c<A.length;c++) {
+			System.out.println(" "+c+" "+A[c]);
 		}
 	}
 
