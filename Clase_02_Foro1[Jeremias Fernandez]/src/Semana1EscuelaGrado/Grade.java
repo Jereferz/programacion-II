@@ -28,7 +28,6 @@ public class Grade extends School {
 
 	@Override
 	public String toString() {
-		return "Grado [Stud=" + Stud + ", AmountStud=" + AmountStud + "]";
+		return "[Name School="+super.getName()+"[Level school="+super.getLevel()+"Grade [Course=" + Stud + ", Amount of students=" + AmountStud + "]";
 	}
-	
 }
