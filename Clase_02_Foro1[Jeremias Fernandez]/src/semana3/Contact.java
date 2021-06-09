@@ -45,11 +45,17 @@ public class Contact {
 	public void setTopList(boolean topList) {
 		this.topList = topList;
 	}
-
+	public boolean equals(Object o) {
+		Contact otherContact = (Contact) o;
+		return (otherContact.name == name)&&(otherContact.email==email)&&(otherContact.mobil==mobil);
+	}
+	
 	@Override
 	public String toString() {
-		return "Contact [Name=" + name + " Email=" + email + ", mobil=" + mobil + "]";
+		return "Contact [Name=" + name + ", Email=" + email + ", Mobil=" + mobil + ", Favorite=" + topList + "]";
 	}
+
+	
 	
 	
 }
