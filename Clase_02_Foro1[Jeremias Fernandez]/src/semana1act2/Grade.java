@@ -1,4 +1,4 @@
-package Semana1EscuelaGrado;
+package semana1act2;
 
 public class Grade extends School {
 	private String Stud;
@@ -28,6 +28,6 @@ public class Grade extends School {
 
 	@Override
 	public String toString() {
-		return "[Name School="+super.getName()+"[Level school="+super.getLevel()+"Grade [Course=" + Stud + ", Amount of students=" + AmountStud + "]";
+		return "[Name School= "+super.getName()+"Level school= "+super.getLevel()+"] "+"[Grade Course= " + Stud + ", Amount of students= " + AmountStud + "]";
 	}
 }

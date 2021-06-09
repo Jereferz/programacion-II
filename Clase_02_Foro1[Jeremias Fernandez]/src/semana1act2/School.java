@@ -1,4 +1,4 @@
-package Semana1EscuelaGrado;
+package semana1act2;
 
 public class School {
 	private String Name;
