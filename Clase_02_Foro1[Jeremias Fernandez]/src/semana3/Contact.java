@@ -47,7 +47,7 @@ public class Contact {
 	}
 	public boolean equals(Object o) {
 		Contact otherContact = (Contact) o;
-		return (otherContact.name == name)&&(otherContact.email==email)&&(otherContact.mobil==mobil);
+		return (otherContact.name == name)&&(otherContact.mobil==mobil);
 	}
 	
 	@Override

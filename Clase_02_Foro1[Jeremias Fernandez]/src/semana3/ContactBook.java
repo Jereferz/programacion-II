@@ -2,7 +2,7 @@ package semana3;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ContacBook {
+public class ContactBook {
 	private String name;
 	
 	public void setName(String name) {
@@ -12,7 +12,11 @@ public class ContacBook {
 		return name;
 	}
 	
-	public void addContact() {
+	@Override
+	public String toString() {
+		return "The name of Contact Book is [" + name + "]";
+	}
+	/*public void addContact() {
 		ArrayList<Contact> miArrayList = new ArrayList<Contact>();
 		Contact myContact;
 		String name;
@@ -33,14 +37,16 @@ public class ContacBook {
 			myContact = new Contact(name,email,mobil,topList);
 			miArrayList.add(myContact);
 			
-		}while(!name.equals("fin")||!email.equals("fin"));
-	}
+		}while(!name.equals("end")||!email.equals("end"));
+	}*/
 	public void delContact() {
 		
 	}
 	public boolean isTheContact(Contact c) {
-		
+		Contact otherContact=(Contact) c;
+		return true;
 	}
+	
 	
 	
 	
