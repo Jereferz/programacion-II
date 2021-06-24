@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class ContactBook {
 	private String name;
+	private ArrayList<Contact> newscontacts;
 	
 	public void setName(String name) {
-		this.name = name;
+		newscontacts = new ArrayList<Contact>();
 	}
 	public String getName() {
 		return name;
@@ -39,8 +40,12 @@ public class ContactBook {
 			
 		}while(!name.equals("end")||!email.equals("end"));
 	}*/
-	public void delContact() {
-		
+	public void addContact(Contact c) {
+		newscontacts.add(c);
+		return;
+	}
+	public void delContact(Contact c) {
+		return;
 	}
 	public boolean isTheContact(Contact c) {
 		Contact otherContact=(Contact) c;

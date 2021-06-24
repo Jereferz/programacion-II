@@ -45,6 +45,7 @@ public class Contact {
 	public void setTopList(boolean topList) {
 		this.topList = topList;
 	}
+	@Override
 	public boolean equals(Object o) {
 		Contact otherContact = (Contact) o;
 		return (otherContact.name == name)&&(otherContact.mobil==mobil);
