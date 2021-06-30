@@ -6,16 +6,14 @@ public class ContactBook {
 	private String name;
 	private ArrayList<Contact> newscontacts;
 	
-	public void setName(String name) {
+	public ContactBook() {
 		newscontacts = new ArrayList<Contact>();
 	}
 	public String getName() {
 		return name;
 	}
-	
-	@Override
-	public String toString() {
-		return "The name of Contact Book is [" + name + "]";
+	public void setName(String name) {
+		this.name = name;
 	}
 	/*public void addContact() {
 		ArrayList<Contact> miArrayList = new ArrayList<Contact>();
@@ -45,13 +43,21 @@ public class ContactBook {
 		return;
 	}
 	public void delContact(Contact c) {
+		newscontacts.remove(c);
 		return;
 	}
 	public boolean isTheContact(Contact c) {
 		Contact otherContact=(Contact) c;
 		return true;
 	}
-	
+	@Override
+	public String toString() {
+		String cont = "";
+		for (int i=0;i<newscontacts.size();i++) {
+			cont = cont+newscontacts.get(i).toString();
+		}
+		return "The name of Contact Book is [" + this.name + "]"+cont;
+	}
 	
 	
 	

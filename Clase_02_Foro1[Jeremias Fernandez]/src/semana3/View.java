@@ -28,7 +28,7 @@ public class View {
 			return contactBookNew;
 		}
 		public static ContactBook addingContact(ContactBook newcontact) {
-			ArrayList<Contact> miArrayList = new ArrayList<Contact>();
+			ArrayList<Contact> newscontacts = new ArrayList<Contact>();
 			String name;
 			String email;
 			String mobil;
@@ -36,34 +36,31 @@ public class View {
 			int num;
 			Scanner read = new Scanner(System.in);
 			System.out.println("Set new contact");
-			do {
-				System.out.println("Name: ");
-				name = read.next();
-				System.out.println("Email: ");
-				email = read.next();
-				System.out.println("Mobil: ");
-				mobil = read.next();
-				try {
-					System.out.println("Favorite:(1/0) ");
-					num = read.nextInt();
-					switch(num) {
-					case 1:
-						topList=true;
-						break;
-					case 0:
-						topList=false;
-						break;
-					}
-				}catch (InputMismatchException e) {
-					System.out.println("No letter, No signs");
-					System.out.println("Put the correct number!");
+			System.out.println("Name: ");
+			name = read.next();
+			System.out.println("Email: ");
+			email = read.next();
+			System.out.println("Mobil: ");
+			mobil = read.next();
+			try {
+				System.out.println("Favorite:(1/0) ");
+				num = read.nextInt();
+				switch(num) {
+				case 1:
+					topList=true;
+					break;
+				case 0:
+					topList=false;
+					break;
 				}
-				
-				
-				Contact myContact = new Contact(name,email,mobil,topList);
-				newcontact.addContact(myContact);
-				
-			}while(!name.equals("end")||!email.equals("end"));
+			}catch (InputMismatchException e) {
+				System.out.println("No letter, No signs");
+				System.out.println("Put the correct number!");
+			}
+			
+			
+			Contact myContact = new Contact(name,email,mobil,topList);
+			newcontact.addContact(myContact);
 			return newcontact;
 		}
 }
