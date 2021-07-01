@@ -53,7 +53,10 @@ public class Contact {
 	
 	@Override
 	public String toString() {
-		return "Contact [Name=" + name + ", Email=" + email + ", Mobil=" + mobil + ", Favorite=" + topList + "]";
+		return "Contact Name=" + name + ", Email=" + email + ", Mobil=" + mobil + ", Favorite=" + topList;
+	}
+	public String toString(String sep) {
+		return this.name+sep+this.email+sep+this.mobil+sep+this.topList;
 	}
 
 	

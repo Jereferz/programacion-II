@@ -13,7 +13,8 @@ public class Main {
 				System.out.println(booknew);
 			}else if (o == 2) {
 				ContactBook contact1 = View.addingContact(booknew);
-				System.out.println(contact1);
+				String st_contacto = contact1.toString("#");
+				System.out.println(st_contacto);
 			}
 		}while(o!=4);
 		
