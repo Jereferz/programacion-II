@@ -8,10 +8,8 @@ public class app6 {
 		int A, B, I, C, R;
 		Scanner v1 = new Scanner(System.in);
 		A = v1.nextInt();	
-	    B = v1.nextInt();
-	    
+	    B = v1.nextInt();	    
 	    R = A-B;
-	  
 		do {
 			C = v1.nextInt();
 			//System.out.print(R);

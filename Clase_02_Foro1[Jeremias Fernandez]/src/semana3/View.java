@@ -9,7 +9,7 @@ public class View {
 			int n = 0;
 			System.out.println("1. Create a Contact Book");
 			System.out.println("2. Create new Contact");
-			System.out.println("3. Delete a Conctact");
+			System.out.println("3. List of Contact book");
 			System.out.println("4. Salir");
 			try {
 				n = read.nextInt();
@@ -20,6 +20,10 @@ public class View {
 			
 			return n;
 		} 
+		public static void listCB(ContactBook CB) {
+			System.out.println("The list of contact");
+			System.out.println(CB);
+		}
 		public static ContactBook createContactBook(ContactBook contactBookNew) {
 			Scanner read = new Scanner(System.in);
 			System.out.println("Set the name of Contact Book: ");

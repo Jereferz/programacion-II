@@ -6,10 +6,10 @@ public class ControllerTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*String data = "No por mucho madrugar, etc. etc.";
-		String nombre = "miRefran.txt";
+		String data = "No por mucho madrugar, amanece mas temprano.";
+		String nombre = "miRefran2.txt";
 		GestorArchivos.guardar(nombre, data);
-		
+		/*
 		ArrayList<String> empa = new ArrayList<>();
 		empa.add("Enzo");
 		empa.add("Argentino");
@@ -22,7 +22,7 @@ public class ControllerTest {
 		
 		System.out.println(paquete);
 		
-		GestorArchivos.guardar("datoAfiliado.txt", paquete);*/
+		GestorArchivos.guardar("datoAfiliado.txt", paquete);
 		
 		String paquete = GestorArchivos.cargar("datoAfiliado.txt");
 		
@@ -34,7 +34,9 @@ public class ControllerTest {
 		
 		for(int j=0;j<datosAfiliado.size();j++) {
 			System.out.println("--> " + datosAfiliado.get(j));
-		}
+		}	
+		*/
+		
 	}
 
 }

@@ -12,12 +12,13 @@ public class app7 {
 		String Usuario = read.next();
 		System.out.println("Ingrese su contraseña");
 		int Contraseña = read.nextInt();
+		while (true) {
 		if ((Usua != Usuario) && (Contr != Contraseña)) {
 			System.out.println("Su usuario/contraseña es incorrecto/a");
 		}else{
 			System.out.println("Bienvenido.");
 		}
-		
+		}
 	}
 
 }

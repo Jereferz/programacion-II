@@ -11,9 +11,8 @@ public class App2 {
 	    A = v1.nextInt();	
 	    B = v1.nextInt();
 	    do {
-	    	System.out.println("Numeros del medio: "+A);
 	    	A = A+1;
+	    	System.out.println("Numeros del medio: "+A);
 	    }while (A<B);
-
-	}
+	} 
 }
