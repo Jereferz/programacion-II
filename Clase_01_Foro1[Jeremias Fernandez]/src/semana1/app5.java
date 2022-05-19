@@ -17,7 +17,7 @@ public class app5 {
 			    	}    
 	    		 }
 		    }else{
-		    	for (I=A;A<=B;A++) {
+		    	for (int I=A;A<=B;A++) {
 		    		if (A%C!=0){ 
 		    		System.out.println(" "+A);
 			}}}

@@ -2,16 +2,24 @@ package semana2_3;
 
 
 public class Persona {
+	private String Obra_social;
 	private String Nombre;
 	private String Apellido;
 	
 	
-	public Persona(String nombre, String apellido) {
+	public Persona(String Osocial, String nombre, String apellido) {
+		Obra_social = Osocial;
 		Nombre = nombre;
 		Apellido = apellido;
 		
 	}
-	
+	public String getObra_social() {
+		return Obra_social;
+	}
+
+	public void setObra_social(String obra_social) {
+		Obra_social = obra_social;
+	}
 	public String getNombre() {
 		return Nombre;
 	}
@@ -27,7 +35,7 @@ public class Persona {
 	}
 	@Override
 	public String toString() {
-		return "persona [Nombre=" + Nombre + ", Apellido=" + Apellido + "]";
+		return "Persona [Obra_social=" + Obra_social + ", Nombre=" + Nombre + ", Apellido=" + Apellido + "]";
 	}
 	
 }
