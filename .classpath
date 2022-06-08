@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Clase_01_Foro1[Jeremias Fernandez]/src"/>
+	<classpathentry kind="src" path="Clase_02_Foro1[Jeremias Fernandez]/src"/>
+	<classpathentry kind="src" path="farmacy"/>
+	<classpathentry kind="output" path="Clase_01_Foro1[Jeremias Fernandez]/bin"/>
+</classpath>
