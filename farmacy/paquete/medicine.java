@@ -1,12 +1,20 @@
 package paquete;
 
 public class medicine {
-
+	
 	private int code;
 	private String name;
 	private int amount;
 	private double unit_price;
-	
+	//Contructor de medicinas
+	public medicine(int code, String name, int amount, double unit_price) {
+		super();
+		this.code = code;
+		this.name = name;
+		this.amount = amount;
+		this.unit_price = unit_price;
+	}
+	//Getters y Setters de cada atributo
 	public int getCode() {
 		return code;
 	}
@@ -32,7 +40,7 @@ public class medicine {
 		this.unit_price = unit_price;
 	}
 	
-	@Override
+	//Metodo toString de medicinas
 	public String toString() {
 		return "medicine [code=" + code + ", name=" + name + ", amount=" + amount + ", unit_price=" + unit_price + "]";
 	}
