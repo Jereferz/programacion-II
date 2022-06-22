@@ -13,9 +13,9 @@ public class Main {
 				System.out.println(booknew);
 			}else if (o == 2) {
 				ContactBook contact1 = View.addingContact(booknew);
-				//String st_contacto = contact1.toString("#");
-				System.out.println(contact1);
-				DataModel.saveCB(booknew);
+				String st_contacto = contact1.toString("#");
+				System.out.println(st_contacto);
+				//DataModel.saveCB(booknew);
 			} else if (o == 3) {
 				View.listCB(booknew);
 			}

@@ -1,5 +1,6 @@
 package paquete;
 
+import java.math.BigInteger;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -26,15 +27,22 @@ public class view {
 		Scanner read = new Scanner(System.in);
 		System.out.println("Ingrese Datos del Proveedor");
 		System.out.println("Ingrese el codigo");
-		int codeP = read.nextInt();
+		//int codeP = read.nextInt();
+		int codeP = 4444;
 		System.out.println("Ingrese el nombre");
-		String nameP = read.next();
+		//String nameP = read.next();
+		String nameP = "VeriFarma";
 		System.out.println("Ingrese el phone");
-		int numberP = read.nextInt();
+		//int numberP = read.nextInt();
+		int numberP = 263565276;
 		System.out.println("Ingrese el adress");
-		String adressP = read.next();
-		provider proveedor = new provider(codeP,nameP,numberP,adressP);
+		//String adressP = read.next();
+		String adressP = "Calle cerro Aconcagua";
+		//provider proveedor = new provider(codeP,nameP,numberP,adressP);
+		p.setCode(codeP);
 		p.setName(nameP);
+		p.setPhone(numberP);
+		p.setAdress(adressP);
 		return p;
 	}
 }
