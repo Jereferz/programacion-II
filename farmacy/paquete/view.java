@@ -9,10 +9,10 @@ public class view {
 	public static int menu() {
 		Scanner read =new Scanner(System.in);
 		int leer = 0;
-		System.out.println("1. Add deposit");
-		System.out.println("2. Add medicine");
-		System.out.println("3. Show stock");
-		System.out.println("4. Exit");
+		System.out.println("1. Agregar Proveedor");
+		System.out.println("2. Agregar Medicamento");
+		System.out.println("3. Mostrar inventario");
+		System.out.println("4. Salir");
 		//Excepcion para que no inserte simbolos ni letras
 		try {
 			leer = read.nextInt();

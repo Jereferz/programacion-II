@@ -17,7 +17,6 @@ public class View {
 				System.out.println("No letter, No signs");
 				System.out.println("Put the correct number!");
 			}
-			
 			return n;
 		} 
 		public static void listCB(ContactBook CB) {

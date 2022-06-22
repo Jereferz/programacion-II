@@ -11,6 +11,8 @@ public class controller {
 			  if (leer == 1) {
 				  proveedor = view.registerProvider(new provider());
 				  System.out.println(proveedor);
+			  }else if (leer == 2) {
+				  //provider medicine1 = view.addingMedicine(proveedor);
 			  }
 			 
 		}while(leer!=4);
