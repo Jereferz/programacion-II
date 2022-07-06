@@ -1,6 +1,6 @@
 package paquete;
 
-public class Controller {
+public class Controllerr {
 
 	public static void main(String[] args) {
 		Provider proveedor = null;
@@ -18,4 +18,5 @@ public class Controller {
 
 		} while (leer != 4);
 	}
+
 }
