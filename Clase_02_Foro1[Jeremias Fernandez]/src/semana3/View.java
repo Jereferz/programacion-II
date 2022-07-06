@@ -32,7 +32,7 @@ public class View {
 			return contactBookNew;
 		}
 		public static ContactBook addingContact(ContactBook newcontact) {
-			ArrayList<Contact> newscontacts = new ArrayList<Contact>();
+			//ArrayList<Contact> newscontacts = new ArrayList<Contact>();
 			String name;
 			String email;
 			String mobil;

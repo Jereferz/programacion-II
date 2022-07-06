@@ -1,13 +1,13 @@
 package paquete;
 
-public class medicine {
+public class Medicine {
 	
 	private int code;
 	private String name;
 	private int amount;
 	private double unit_price;
 	//Contructor de medicinas
-	public medicine(int code, String name, int amount, double unit_price) {
+	public Medicine(int code, String name, int amount, double unit_price) {
 		super();
 		this.code = code;
 		this.name = name;

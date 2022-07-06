@@ -1,10 +1,9 @@
 package paquete;
 
-import java.math.BigInteger;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class view {
+public class View {
 	//Menu inicial que ve el usuario
 	public static int menu() {
 		Scanner read =new Scanner(System.in);
@@ -23,7 +22,7 @@ public class view {
 		return leer;
 	}
 	//menu numero 1 para ingresar proveedor
-	public static provider registerProvider(provider p) {
+	public static Provider registerProvider(Provider p) {
 		Scanner read = new Scanner(System.in);
 		System.out.println("Ingrese Datos del Proveedor");
 		System.out.println("Ingrese el codigo");
@@ -44,5 +43,28 @@ public class view {
 		p.setPhone(numberP);
 		p.setAdress(adressP);
 		return p;
+	}
+	public static Provider addingMedicine(Provider newmedicine) {
+		int code;
+		String name;
+		int amount;
+		double unit_price;
+		Scanner read = new Scanner(System.in);
+		System.out.println("Agregue nueva medicina");
+		System.out.println("Codigo: ");
+		code = read.nextInt();
+		System.out.println("Nombre: ");
+		name = read.next();
+		System.out.println("Cantidad: ");
+		amount= read.nextInt();
+		System.out.println("Precio x unidad: ");
+		unit_price = read.nextDouble();
+		Medicine medicine = new Medicine(code,name,amount,unit_price);
+		newmedicine.addMedicine(medicine);
+		return newmedicine;
+	}
+	public static void listMedicine(Provider PM) {
+		System.out.println("Lista de las medicinas");
+		System.out.println(PM);
 	}
 }
