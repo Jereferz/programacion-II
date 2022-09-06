@@ -40,9 +40,15 @@ public class Medicine {
 		this.unit_price = unit_price;
 	}
 	
+	@Override
+	
 	//Metodo toString de medicinas
 	public String toString() {
 		return "medicine [code=" + code + ", name=" + name + ", amount=" + amount + ", unit_price=" + unit_price + "]";
+	}
+	public String toString(String sep) {
+		String medic = this.code + sep + this.name + sep + this.amount + sep + this.unit_price;
+		return medic;
 	}
 	
 }

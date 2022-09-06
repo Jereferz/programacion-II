@@ -55,7 +55,13 @@ public class Provider {
 		for (int i=0;i<newmedicine.size();i++) {
 			c = c+newmedicine.get(i).toString();
 		}
-		return "provider [code=" + code + ", name=" + name + ", phone=" + phone + ", adress=" + adress + "] "+c;
+		return "Provedor [codigo=" + code + ", nombre=" + name + ", Telefono=" + phone + ", Direccion=" + adress + "] "+c;
 	}
-	
+	public String toString(String sep) {
+		String c = "";
+		for (int i=0;i<newmedicine.size();i++) {
+			c = c+newmedicine.get(i).toString("#")+sep;
+		}
+		return c;
+	}
 }

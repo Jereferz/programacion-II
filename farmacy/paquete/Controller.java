@@ -12,6 +12,9 @@ public class Controller {
 				System.out.println(proveedor);
 			} else if (leer == 2) {
 				Provider medicine1 = View.addingMedicine(proveedor);
+				String st_medicine = medicine1.toString("#");
+				System.out.println(st_medicine);
+				DataModel.saveCB(proveedor);
 			} else if (leer == 3) {
 				View.listMedicine(proveedor);
 			}
