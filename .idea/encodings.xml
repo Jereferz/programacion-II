@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+<<<<<<< HEAD
     <file url="file://$PROJECT_DIR$/Clase_02_Foro1[Jeremias Fernandez]/src/semana1/UserContra2Arrays.java" charset="windows-1252" />
+=======
+    <file url="file://$PROJECT_DIR$/Clase_01_Foro1[Jeremias Fernandez]/src/semana1/app7.java" charset="windows-1252" />
+    <file url="PROJECT" charset="windows-1252" />
+>>>>>>> 5b3906604148a93cff4b0a2385a4a88ebac27a9b
   </component>
 </project>
